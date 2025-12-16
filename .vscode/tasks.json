@@ -1,0 +1,158 @@
+{
+    // ========================================
+    // VSCode Tasks for WoorobotSDK Build
+    // ========================================
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "catkin_make: Build All",
+            "type": "shell",
+            "command": "catkin_make",
+            "args": [
+                "-j2",
+                "--cmake-args",
+                "-DCMAKE_BUILD_TYPE=Release"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": false
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "label": "catkin_make: Clean",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "build",
+                "devel"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "label": "CMake: Configure",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-B",
+                "build",
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DCMAKE_CXX_STANDARD=17"
+            ],
+            "group": "build",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/WoorobotSDK"
+            }
+        },
+        {
+            "label": "CMake: Build",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--",
+                "-j2"
+            ],
+            "group": "build",
+            "dependsOn": "CMake: Configure",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/WoorobotSDK"
+            }
+        },
+        {
+            "label": "Python: Run Current File",
+            "type": "shell",
+            "command": "python3",
+            "args": [
+                "${file}"
+            ],
+            "group": "none",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": true
+            }
+        },
+        {
+            "label": "ROS: Source Setup",
+            "type": "shell",
+            "command": "source",
+            "args": [
+                "/opt/ros/melodic/setup.bash"
+            ],
+            "group": "none",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "C++: Compile Current File",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "C++: Run Current File",
+            "type": "shell",
+            "command": "${fileDirname}/${fileBasenameNoExtension}",
+            "dependsOn": "C++: Compile Current File",
+            "group": "test",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": true
+            }
+        }
+    ]
+}

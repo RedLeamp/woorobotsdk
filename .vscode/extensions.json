@@ -1,0 +1,50 @@
+{
+    // ========================================
+    // Recommended VSCode Extensions for WoorobotSDK
+    // ========================================
+    "recommendations": [
+        // C/C++ Development
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.cmake-tools",
+        "twxs.cmake",
+        
+        // Python Development
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        
+        // ROS Development
+        "ms-iot.vscode-ros",
+        "smilerobotics.urdf",
+        
+        // Git & Version Control
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        
+        // Code Quality
+        "streetsidesoftware.code-spell-checker",
+        "editorconfig.editorconfig",
+        
+        // Markdown & Documentation
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        
+        // Debugging & Testing
+        "formulahendry.code-runner",
+        
+        // IntelliSense
+        "visualstudioexptteam.vscodeintellicode",
+        
+        // Remote Development
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode-remote.remote-ssh-edit",
+        
+        // Theme & UI (Optional)
+        "pkief.material-icon-theme",
+        "zhuangtongfa.material-theme",
+        
+        // XML for ROS launch files
+        "redhat.vscode-xml",
+        "dotjoshjohnson.xml"
+    ]
+}
