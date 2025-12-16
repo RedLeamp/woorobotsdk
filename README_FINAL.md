@@ -16,17 +16,19 @@
 
 ---
 
-## 📚 문서 목록 (전체 7개)
+## 📚 문서 목록 (전체 9개)
 
 | # | 문서 | 크기 | 용도 |
 |---|------|------|------|
-| 1 | **COMPLETE_USAGE_GUIDE.md** | 13KB | 📖 **여기서 시작!** 전체 사용법 |
-| 2 | **QUICK_COMPILE_GUIDE.md** | 13KB | ⚡ 빠른 컴파일 명령어 |
-| 3 | **JETSON_NANO_BUILD_GUIDE.md** | 11KB | 🔧 상세 빌드 가이드 |
-| 4 | **CODE_ANALYSIS_SUMMARY.md** | 12KB | 🔍 코드 구조 분석 |
-| 5 | **JETSON_NANO_COMPILE_COMMANDS.sh** | 16KB | 🤖 자동 빌드 스크립트 |
-| 6 | **README_COMPILE.md** | 4KB | 📋 문서 인덱스 |
-| 7 | **robot_control_ui.py** | 26KB | 🎮 제어 UI 프로그램 |
+| 1 | **COMPLETE_USAGE_GUIDE.md** | 19KB | 📖 **여기서 시작!** 전체 사용법 |
+| 2 | **VSCODE_SETUP_GUIDE.md** | 10KB | 🎨 **NEW!** VSCode 설정 가이드 |
+| 3 | **QUICK_COMPILE_GUIDE.md** | 16KB | ⚡ 빠른 컴파일 명령어 |
+| 4 | **JETSON_NANO_BUILD_GUIDE.md** | 15KB | 🔧 상세 빌드 가이드 |
+| 5 | **CODE_ANALYSIS_SUMMARY.md** | 17KB | 🔍 코드 구조 분석 |
+| 6 | **JETSON_NANO_COMPILE_COMMANDS.sh** | 19KB | 🤖 자동 빌드 스크립트 |
+| 7 | **setup_jetson_nano.sh** | 23KB | ⚙️ 원클릭 환경 설정 |
+| 8 | **robot_control_ui.py** | 28KB | 🎮 PyQt5 제어 UI |
+| 9 | **web_control_ui.py** | 26KB | 🌐 웹 제어 UI |
 
 ---
 
@@ -106,6 +108,15 @@ UI에서:
    - 컴파일 방법
    - 실행 방법
    - UI 사용법
+
+### 🎨 개발 환경 설정 (NEW!)
+**VSCODE_SETUP_GUIDE.md**
+- Visual Studio Code 설치
+- 필수 확장 프로그램 설정
+- C++/Python/ROS IntelliSense
+- 빌드 태스크 및 디버깅
+- 원격 SSH 개발 (Jetson Nano)
+- 단축키 및 문제 해결
 
 ### ⚡ 빠른 참조
 **QUICK_COMPILE_GUIDE.md**
@@ -345,10 +356,12 @@ pip3 install PyQt5
 
 ## 📈 프로젝트 통계
 
-- **문서**: 7개 (총 95KB)
-- **코드 라인**: 4,000+ 줄
+- **문서**: 9개 (총 140KB+)
+- **VSCode 설정**: 5개 JSON 파일
+- **코드 라인**: 7,000+ 줄
 - **ROS 노드**: 15+ 개
-- **지원 플랫폼**: Jetson Nano
+- **지원 플랫폼**: Jetson Nano, Linux
+- **IDE 지원**: Visual Studio Code (완전 통합)
 - **개발 기간**: 2025
 - **최종 업데이트**: 2025-12-16
 
@@ -359,8 +372,11 @@ pip3 install PyQt5
 이 프로젝트는 다음을 포함합니다:
 - ✅ 완전한 빌드 시스템
 - ✅ 자동화 스크립트
-- ✅ GUI 제어 프로그램
-- ✅ 상세한 문서
+- ✅ GUI 제어 프로그램 (PyQt5 + 웹)
+- ✅ Visual Studio Code 완전 통합 (NEW!)
+- ✅ C++/Python IntelliSense 설정
+- ✅ 빌드 태스크 및 디버깅 구성
+- ✅ 상세한 문서 (9개)
 - ✅ 예제 코드
 - ✅ 문제 해결 가이드
 
