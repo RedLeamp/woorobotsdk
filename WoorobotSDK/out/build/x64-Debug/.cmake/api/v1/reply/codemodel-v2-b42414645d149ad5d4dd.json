@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "woorobot_sdk",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "woorobot_config::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-woorobot_config-Debug-4b1ed3fa2e406cc19b8f.json",
+					"name" : "woorobot_config",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "woorobot_example::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-woorobot_example-Debug-208fa6d789cace776982.json",
+					"name" : "woorobot_example",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "woorobot_sdk::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-woorobot_sdk-Debug-920d84a6a076d15126c2.json",
+					"name" : "woorobot_sdk",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/MSI/source/repos/woorobotsdk/WoorobotSDK/out/build/x64-Debug",
+		"source" : "C:/Users/MSI/source/repos/woorobotsdk/WoorobotSDK"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
