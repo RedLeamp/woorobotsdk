@@ -1,0 +1,45 @@
+{
+    "configurations": [
+        {
+            "name": "Linux (ROS)",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/WoorobotSDK/include",
+                "${workspaceFolder}/WoorobotSDK/woorobot_sdk_cpp",
+                "/usr/include/**",
+                "/usr/local/include/**",
+                "/opt/ros/melodic/include/**",
+                "/opt/ros/noetic/include/**",
+                "/usr/include/eigen3",
+                "/usr/include/pcl-1.8",
+                "/usr/include/pcl-1.10"
+            ],
+            "defines": [
+                "ROS_BUILD_SHARED_LIBS=1",
+                "ROSCONSOLE_BACKEND_LOG4CXX",
+                "ROS_PACKAGE_NAME=\"woorobot_sdk\""
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-arm64",
+            "compilerArgs": [
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "/usr/include",
+                    "/usr/local/include",
+                    "/opt/ros/melodic/include",
+                    "/opt/ros/noetic/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db"
+            }
+        }
+    ],
+    "version": 4
+}
